@@ -15,6 +15,7 @@ nav {
 }
 
 footer {
+    padding: 1rem;
     background-color: var(--dark-color);
 }
 
