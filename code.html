@@ -14,6 +14,7 @@
     <script src="https://kit.fontawesome.com/5db21ba9c6.js" crossorigin="anonymous"></script>
     
     <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/prism.css">
 
     <link rel="icon" type="imgage/png" href="img/jjrIcon.png">
 
@@ -53,8 +54,28 @@
 
     <!-- Main Section -->
     <main class="flex-shrink-0">
-        <div class="container">
+        <div class="container py-5 px-5 mt-5">
+            <h1 class="border-1 border-bottom border-dark">The CODE for the App.</h1>
+            <div class="row row-cols-1 row-cols-lg-2">
 
+                <div class="col-lg-8">
+                    <pre class="line-numbers">
+                        <code class="language-javascript">
+                            //Call HelloWorld() function
+                                function HelloWorld(){
+                                    alert("Hello World!");
+                                }
+                        </code>
+                    </pre>
+                </div>
+
+                <div class="col-lg-4">
+                    <p>The Code is structured in one function.</p>
+                    <h5>Hello World</h5>
+                    <p>HelloWorld() is a function that displays an alert with a message of "Hello World!"</p>
+                </div>
+
+            </div>
         </div>
     </main>
 
@@ -82,6 +103,16 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <script src="js/prism.js"></script>
+
+    <script> 
+        Prism.plugins.NormalizeWhitespace.setDefaults({
+            'remove-trailing': true,
+            'remove-indent': true,
+            'left-trim': true,
+            'right-trim': true
+        })
     </script>
 
 </body>
